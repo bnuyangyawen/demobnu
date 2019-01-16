@@ -1,0 +1,160 @@
+﻿<item instruction>
+/1="欢迎来到我们的实验。屏幕上会呈现一系列问题，请你判断该描述在多大程度上符合你自己的情况，并按下对应的数字键进行反应。其中，“1”代表完全不符合，“2”代表有些不符合，“3”代表不能确定，“4”代表有些符合，“5”代表完全符合。"
+</item>
+
+<item any>
+/1="请按任意键开始实验"
+</item>
+
+<item select>
+/1="“1”代表完全不符合，“2”代表有些不符合，“3”代表不能确定，“4”代表有些符合，“5”代表完全符合。"
+</item>
+
+<item first>
+/1="我喜欢尽了最大努力能完成的工作。"
+/2="能够测量我能力的机会，对我是有吸引力的。"
+/3="给我的任务即使有充裕的时间，我也喜欢立即开始工作。"
+/4="对我来说，重要的是做有困难的事，即使无人知道也无关重要。"
+/5="我想知道我在完成任务时是不是在不断进步。"
+/6="对于困难的任务，即使没有什么意义，我也很容易卷进去。"
+/7="如果有些事不能立刻理解，我会很快对它产生兴趣。"
+/8="我希望做那些能够发挥我能力的工作。"
+/9="面临我没有把握克服的难题时，我会非常兴奋、快乐。"
+/10="当我遇到我不能立即弄懂的问题，我会充满干劲。"
+</item>
+
+<item second>
+/1="对于那些我不能确定是否能成功的工作，最能吸引我。"
+/2="面对能测量我能力的机会，我感到是一种鞭策和挑战。"
+/3="我喜欢对我没有把握解决的问题坚持不懈地努力。"
+/4="我在完成有困难的任务时，感到快乐。"
+/5="我喜欢新奇的、有困难的任务，甚至不惜冒风险。"
+/6="我喜欢制定和取得符合实际的目标。"
+/7="我喜欢尝试我不知道能否完成的事。"
+/8="我会被那些能了解自己有多大才智的工作所吸引。"
+/9="我喜欢完成复杂任务后的满足感。"
+/10="我从勤奋工作中得到享受。"
+</item>
+
+<item return>
+/1="在那些测量我能力的情境中，我感到不安。"
+/2="我不喜欢做那些我不知道我能否胜任的事。"
+/3="在结果不明的情况下，我担心失败。"
+/4="我对那些没有把握能胜任的工作感到忧虑。"
+/5="一想到要去做那些新奇有困难的工作，我就不安。"
+/6="对需要有特定机会才能解决的事，我会害怕失败。"
+/7="那些看起来相当困难的事，我做时很担心。"
+/8="我不喜欢在不熟悉的环境下工作，即使无人知道也一样。"
+/9="在面对有困难的工作时，我不希望把这个工作分配给我。"
+/10="我讨厌在完全不能确定会不会失败的情境中工作。"
+</item>
+
+<item end>
+/1="实验已全部完成，感谢您来到我们的实验。"
+</item>
+
+<text introtxt>
+/items = instruction
+/fontstyle = ("宋体",3.5%)
+/txcolor = (0,0,0)
+/txbgcolor = (255,255,255)
+/size = (70%,50%)
+/hjustify = left
+</text>
+
+<text anytxt>
+/items = any
+/fontstyle = ("宋体",3.5%)
+/txcolor = (0,0,0)
+/txbgcolor = (255,255,255)
+</text>
+
+<text firsttxt>
+/items = first
+/fontstyle = ("宋体",5%)
+/txcolor = (0,0,0)
+/txbgcolor = (255,255,255)
+/size = (80%,50%)
+/hjustify = left
+</text>
+
+<text secondtxt>
+/items = second
+/fontstyle = ("宋体",5%)
+/txcolor = (0,0,0)
+/txbgcolor = (255,255,255)
+/size = (80%,50%)
+/hjustify = left
+</text>
+
+<text returntxt>
+/items = return
+/fontstyle = ("宋体",5%)
+/txcolor = (0,0,0)
+/txbgcolor = (255,255,255)
+/size = (80%,50%)
+/hjustify = left
+</text>
+
+<text selecttxt>
+/items = select
+/fontstyle = ("宋体",3%)
+/txcolor = (0,0,0)
+/txbgcolor = (255,255,255)
+</text>
+
+<text endtxt>
+/items = end
+/fontstyle = ("宋体",5%)
+/txcolor = (0,0,0)
+/txbgcolor = (255,255,255)
+</text>
+
+<trial introtrl>
+/stimulusframes = [1=introtxt,anytxt]
+/validresponse = (anyresponse)  
+/recorddata = false
+</trial>
+
+<trial firsttrl>
+/stimulusframes = [1=firsttxt,selecttxt]
+/validresponse = ("1","2","3","4","5")
+/pretrialpause = 500 
+</trial>
+
+<trial secondtrl>
+/stimulusframes = [1=secondtxt,selecttxt]
+/validresponse = ("1","2","3","4","5")
+/pretrialpause = 500 
+</trial>
+
+<trial returntrl>
+/stimulusframes = [1=returntxt,selecttxt]
+/validresponse = ("1","2","3","4","5")
+/pretrialpause = 500 
+</trial>
+
+<trial endtrl>
+/stimulusframes = [1=endtxt]
+/validresponse = (anyresponse)  
+/recorddata = false
+</trial>
+
+<block introblk>
+/trials= [ 1= introtrl]
+/screencolor= (255,255,255)
+</block>
+
+<block expblk>
+/trials=[1-24=noreplacenorepeat(firsttrl,secondtrl,returntrl)]
+/screencolor = (255,255,255)
+</block>
+
+<block endblk>
+/trials= [ 1= endtrl]
+/screencolor= (255,255,255)
+</block>
+
+<expt>
+/blocks = [1=introblk;2=expblk;3=endblk]
+</expt>

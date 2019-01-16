@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Psychological Experiment</title>
+	
+	<!-- step1. bootstrap CSS 样式 -->
+	<link href="../assets/css/bootstrap.css" rel="stylesheet">
+	<!--响应式布局 --> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+	 
+</head>
+
+<body>
+	<!--step 15 导航栏-->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Psychological Experiment</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+	<!--step 15 结束-->
+	
+	<!-- step3 在body建立 container-fluid 类型的div，页面的所有内容将在这个div中呈现-->
+	<div class="container" style="background-color:LightYellow3">
+	
+	<!-- step bootstrap组件示例：Hero组件-->
+	<div class="hero-unit" style="background-color:#4F4F4F">
+	  <h1 style="color:#F8F8FF">欢迎您参加本次实验！</h1>
+	  <h1 style="color:#F8F8FF">Welcome to our experiment!</h1>
+	  <p style="color:#F5F5F5;margin-top:20px;margin-bottom:20px;">请您认真阅读<a href="#shiyan">实验背景</a>，<a href="#zhiqing">知情同意</a>及<a href="#zhidao">实验流程</a>板块</p>
+	  <p>
+		<a class="btn btn-primary btn-large">
+		  更多信息
+		</a>
+	  </p>
+	</div>
+	<!-- step end-->
+	
+	<!-- step4 建立row-fluid类型的div，在该div中将应用span进行栅格布局 -->
+	<div class="row" style="margin-top:10px;margin-bottom:100px;">
+		<!-- step5 为当前div进行span划分，比如这里我们建立三块内容，每个内容占据span4 -->
+		<!-- 模块1-->
+		<div class="span4" style="background-color:CadetBlue1";"font-size:16px">
+			<!-- step5 添加文字内容--> 
+			
+			
+			<!--step9 添加图片-->
+			<img src="images\1.jpg" style="color:sienna;margin-left:20px;width:390px;height:250px;margin-left:20px;margin-bottom:20px;">
+			<!--step9 结束-->
+			
+			<h2 id="shiyan";class="text-center">实验背景</h2>
+			<p style="font-size:14px">大学生心理弹性对身心健康至关重要，大学生的心理健康可以通过心理弹性从不同的角度进行测量评估，从而进行积极的心理建构。</p>
+			<p style="font-size:14px">根据研究发现，心理弹性对大学生的情绪和行为问题的解决起到积极的保护作用。有研究认为心理弹性作为一种压力反弹能力与大学生的消极情绪和生理症状等呈负相关，但是与乐观、积极情绪等呈正相关。也有研究表明大学生的心理弹性与情绪宣泄调节、内外向及神经质有显著的相关。 学者研究了不同压力水平下大学生积极情绪和消极情绪的关系以及心理弹性在压力与情绪间的中介效应，提出保持适当的积极情绪和消极情绪水平有助于压力适应，增进心理弹性可能提升大学生压力下的积极情绪，也可能缓解消极情绪。</p>
+			<p style="font-size:14px">而此次试验，我们希望对心理弹性和成就动机进行测量，得出心理弹性与成就动机之间的相关关系。</p>
+			<!--step5 结束-->
+			
+		</div>
+		<!--模块1结束-->
+		
+		<!-- 模块2 -->
+		<div class="span4" style="background-color:white";"font-size:16px">
+		    <img src="images\4.jpg" style="color:sienna;margin-left:20px;width:390px;height:250px;margin-left:20px;margin-bottom:20px;">
+			<h2 id="zhiqing";class="text-center">知情同意</h2>
+			
+				
+			<ol>
+				<li>研究描述</li>
+			    <p>我们将通过一个问卷调查和一个线上实验来测量你的心理弹性与成就动机。</p>
+				<li>选择</li>
+				<p>您有权利选择随时退出实验。</p>
+				<li>风险</li>
+				<p>本实验无风险。</p>
+				<li>利益</li>
+				<p>本实验也许能够帮助您更加了解您的心理弹性和成就动机。</p>
+				<li>保密</li>
+				<p>本实验实行保密原则，您的任何信息除了用于实验数据分析，不会被任何人泄露或用于其它目的。</p>
+				<li>补偿</li>
+				<p>实验结束后，您将获得2-5元不等的被试费用。</p>
+				<li>联系</li>
+				<p>如有问题，请联系我们 <a href="mailto:#">first.last@example.com</a></p>
+				
+				
+			</ol>		
+	
+		</div>
+		<!--模块2结束-->
+		
+		<!-- 模块3 -->
+		<div class="span4" style="background-color:white";"font-size:16px">
+            <img src="images\3.jpg" style="color:sienna;margin-left:20px;width:390px;height:250px;margin-left:20px;margin-bottom:20px;">
+			<!-- step5 添加文字内容-->
+			<h2 id="zhidao";class="text-center">实验流程</h2>
+			<p>您将先进行一个调查问卷的填写，该问卷用于收集关于您的心理弹性的数据，请您尽量按照真实情况填写。请您在填完个人信息之后，按“确定键”，在跳出的弹窗选定实验一入口，开始心理弹性问卷的填写</p>
+			<p>完成心理弹性测量问卷之后，我们将进行第二个实验，点击实验二入口，进入成就动机实验。</p>
+			<p>实验过程中有任何问题请和主试联系<a href="mailto:#">first.last@example.com</a>，我们将很乐意回答您的问题。</p>
+			</br>
+			<strong>请您填写下面的基本信息，方便我们的被试数据记录</strong>
+			</br>
+			<form class="form-horizontal">
+			
+			<div class="control-group">
+			<label class="control-label" >年龄</label>
+            <div class="controls">
+			 
+            <select>
+            <option>16-18</option>
+            <option>19-21</option>
+            <option>22-25</option>
+            <option>25以上</option>
+  
+            </select>
+			</div>
+            </div>
+			
+			<div class="control-group">
+            <label class="control-label" for="inputName">姓名</label>
+            <div class="controls">
+            <input type="Name" id="inputName" placeholder="Name">
+            </div>
+            </div>
+            <div class="control-group">
+            <label class="control-label" for="inputEmail">Email</label>
+            <div class="controls">
+            <input type="text" id="inputEmail" placeholder="Email">
+            </div>
+            </div>
+			
+            
+            <div class="control-group">
+            <div class="controls">
+            <label class="checkbox">
+            <input type="checkbox"> Remember me
+            </label>
+			
+			<a href="#myModal" role="button" class="btn" data-toggle="modal">确定</a>
+ 
+            <!-- Modal -->
+            <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">实验入口</h3>
+            </div>
+            <div class="modal-body">
+            <p>接下来请您选择</p>
+			<ol>
+			<li ><a href="https://bnupsych.asia.qualtrics.com/jfe/form/SV_cMDLJpj9QoRR6Lz">实验一</a></li>
+			<li><a href="成就动机测量终版.iqx">实验二</a></li>
+			</ol> 
+            </div>
+            <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+            
+            </div>
+            </div>
+			
+			
+            </div>
+            </div>
+            </form>
+			
+			
+		</div>
+		<!--模块3结束-->	
+            
+	</div>		
+	<!-- row 结束-->
+	<div class="row" style="margin-top:100px;padding:30px;background-color:WhiteSmoke">	  
+	  <dl class="dl-horizontal">
+			<dt>小组分工</dt>
+			<dd>问卷编制（实验一和实验二）：安致秀 </dd>
+			<dd>问卷制作：杨雅雯</dd>
+			<dd>网页制作：谢菲 </dd>
+			<dd>Inqisit制作：钟天娇</dd> 
+			<dd>GitHub：杨雅雯</dd>
+			
+	  </dl>
+	  </div>
+	  
+	  <hr>
+	  <footer>
+        <p>&copy; Company实心小组</p>
+      </footer>
+	</div>
+	<!-- container 结束--> 
+
+	
+    <!-- step2. Placed at the end of the document so the pages load faster -->
+	<!-- bootstrap js-->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+</body>
+</html>
